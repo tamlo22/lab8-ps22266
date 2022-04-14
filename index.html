@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS22266-lab8-bai1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .submit {
+            padding: 15px 20px;
+            text-align: center;
+            border-radius: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" ng-controller="hienthi">
+        <form class="col-6 mx-auto mt-3 border border-warning p-3 rounded">
+            <h3 class="text-center">ĐĂNG KÍ THÀNH VIÊN</h3>
+            <div class="form-group">
+                <label>Mã sinh viên</label>
+                <input name="mã sinh viên" ng-model="mã sinh viên" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Họ và Tên</label>
+                <input name="Họ và Tên" ng-model="Họ và Tên" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input name="Email" ng-model="rong" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Màu sắc</label>
+                <fieldset class="border border-secondary p-3">
+                    <input ng-model="Nam" value="Nam" type="checkbox"> Nam &nbsp;
+                    <input ng-model="Nữ" value="Nữ" type="checkbox"> Nữ
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label>Màu sắc</label>
+                <fieldset class="border border-secondary p-3">
+                    <input ng-model="Đọc sách" value="Đọc sách" type="checkbox"> Đọc sách &nbsp;
+                    <input ng-model="Du lịch" value="Du lịch" type="checkbox"> Du lịch &nbsp;
+                    <input ng-model="Ẩm thực" value="Ẩm thực" type="checkbox"> Ẩm thực&nbsp;
+                    <input ng-model="Âm nhạc" value="Âm nhạc" type="checkbox"> Âm nhạc &nbsp;
+                    <input ng-model=" Khác " value=" Khác " type="checkbox"> Khác
+
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label>Quốc Tịch</label>
+                <select ng-model="nsx" name="nsx" class="form-control bg-secondary text-white">
+                <option value="0">Việt Nam</option>
+                <option value="1">Nhật bản</option>
+                <option value="2">Trung Quốc</option>
+                <option value="3">Mỹ</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label>Ghi chú</label>
+                <textarea name="Ghi chú" id="Ghi chú" cols="68" rows="3"></textarea>
+
+            </div>
+            <div class="submit">
+                <button class="btn btn-warning">Đăng kí</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
